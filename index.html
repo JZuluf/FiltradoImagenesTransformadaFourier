@@ -11,54 +11,47 @@
     <body>
 
         <div id="wrapper">
-            <div id="title">Fourier Image Filtering</div>
+            <div id="title">Filtrado de Imágenes con Fourier</div>
 
             <div id="columns">
 
                 <div id="left">
                     <canvas id="filterer" width="512" height="512"></canvas>
-                    <div id="image-toggle"><span id="previous">Previous Image</span> | <span id="next">Next Image</span></div>
+                    <div id="image-toggle"><span id="previous">Imagen Anterior</span> | <span id="next">Siguiente Imagen</span></div>
                 </div>
 
                 <div id="right">
                     <div id="chart-wrapper">
                         <canvas id="chart" width="720" height="225"></canvas>
 
-                        <div id="power" class="label">Power</div>
-                        <div id="frequency" class="label">Frequency</div>
+                        <div id="power" class="label">Potencia</div>
+                        <div id="frequency" class="label">Frecuencia</div>
                     </div>
 
                     <div id="editor-wrapper">
                         <canvas id="editor" width="720" height="150"></canvas>
 
-                        <div id="gain" class="label">Gain</div>
-                        <div id="frequency2" class="label">Frequency</div>
+                        <div id="gain" class="label">Ganancia</div>
+                        <div id="frequency2" class="label">Frecuencia</div>
 
                         <div id="instructions">
-                            Click on curve to add points.<br/>
-                            Click and drag points to move them.
+                            Haz clic en la curva para añadir puntos.<br/>
+                            Haz clic y arrastra los puntos para moverlos.
                         </div>
                     </div>
 
                     <div id="info">
-                        Any image can be decomposed into the sum of many sinusoids at many different frequencies.<br/>
-                        At the top is the image's frequency spectrum which shows the amplitudes of these sinusoids.<br/>
-                        Below is the frequency response curve which scales the sinusoid amplitudes. Edit it to filter the image.<br/>
-                        For example: <span id="gaussian">Gaussian Blur</span>, <span id="sharpen">Sharpen</span>, <span id="edges">Edge Detection</span>
-                    </div>
-
-                    <div id="footer">
-                        <a href="http://david.li">David.Li</a>
+                        En la parte superior se encuentra el espectro de frecuencias de la imagen<br/>
+                        que muestra las amplitudes de estas sinusoides.<br/>
+                        Debajo está la curva de respuesta de frecuencia, que ajusta las amplitudes de las sinusoides.<br/>
+                        Edítala para filtrar la imagen.<br/>
+                        Por ejemplo: <span id="origin">Imagen Original</span>,<span id="gaussian">Desenfoque Gaussiano</span>, <span id="sharpen">Nitidez</span>, <span id="edges">Detección de Bordes</span>
                     </div>
                 </div>
 
             </div>
 
             <br/>
-            <div id="unsupported">
-                Unfortunately, your browser does not appear to support the required features. <a href="http://david.li">Back to David.Li</a>
-            </div>
-            
         </div>
 
         <script src="shared.js"></script>

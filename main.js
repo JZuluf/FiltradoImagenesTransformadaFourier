@@ -37,6 +37,7 @@ var main = function () {
     var imagesLoaded = 0;
     for (var i = 0; i < IMAGE_URLS.length; ++i) {
         var image = new Image();
+        image.crossOrigin="anonymous";
         image.onload = function () {
             imagesLoaded += 1;
             if (imagesLoaded === IMAGE_URLS.length) { //all images have been loaded
@@ -88,6 +89,15 @@ var main = function () {
             [41, 2],
             [411, 122],
             [675, 150]
+        ]);
+    };
+
+    document.getElementById('origin').onclick = function () {
+        curve.setPoints([
+            [11, 76],
+            [11, 76],
+            [11, 76],
+            [11, 76]
         ]);
     };
 

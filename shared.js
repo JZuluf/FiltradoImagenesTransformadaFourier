@@ -1,5 +1,6 @@
 //all images by Trey Ratcliff
 var IMAGE_URLS = [
+    'images/perro.jpg',
     'images/fields.jpg',
     'images/desert.jpg',
     'images/milky.jpg',
